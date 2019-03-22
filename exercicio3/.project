@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<UIHost xmlns="http://schemas.microsoft.com/sqlserver/setup/uihost.xsd" ResourceManager="Microsoft.SqlServer.Configuration.InstallWizard.SR, Microsoft.SqlServer.Configuration.InstallWizard">
+  <Pages>
+
+    <Page
+      ID="RunRules">
+      <Title ResourceID="SystemConfigurationCheckTitle"></Title>
+      <Subtitle ResourceID="SystemConfigurationCheckSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+        <Button ID="Next" Enabled="false"/>
+        <Button ID="Cancel" Enabled="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.RunStandaloneRuleProgressController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <LoadDataOnForwardNavigationOnly>true</LoadDataOnForwardNavigationOnly>
+    </Page>
+    <Page
+      ID="ProductUpdate" PageType="Page"
